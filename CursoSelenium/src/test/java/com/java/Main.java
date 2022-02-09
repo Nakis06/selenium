@@ -26,7 +26,16 @@ public class Main {
 		System.out.println("Calle normal - 90kms " + velocity);
 		
 		//--Decimal
-		
+		Decimal evalDecimal = new Decimal();
+		boolean decimal = evalDecimal.areEqualByThreeDecimalPlaces(-3.1756, -3.175);
+		System.out.println("Los 3 primeros decimales son iguales " + decimal);
+		decimal = evalDecimal.areEqualByThreeDecimalPlaces(3.175, 3.176);
+		System.out.println("Los 3 primeros decimales son iguales " + decimal);
+		decimal = evalDecimal.areEqualByThreeDecimalPlaces(3.0, 3.0);
+		System.out.println("Los 3 primeros decimales son iguales " + decimal);
+		decimal = evalDecimal.areEqualByThreeDecimalPlaces(-3.123, 3.123);
+		System.out.println("Los 3 primeros decimales son iguales " + decimal);
+				
 		//--Cat
 		boolean playing;
 		Cat cat = new Cat();
