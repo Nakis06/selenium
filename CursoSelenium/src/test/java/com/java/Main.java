@@ -81,5 +81,48 @@ public class Main {
 		System.out.println("La suma de los dos primeros números es igual al tercero " + verifySum);
 		verifySum= verify.hasEqualSum(1, 1, 2);
 		System.out.println("La suma de los dos primeros números es igual al tercero " + verifySum);
+		
+		// Leap year
+		boolean leapYear;
+		leapYear = DaysPerMonth.isLeapYear(1900);
+		System.out.println("Es bisciesto "+leapYear);
+		leapYear = DaysPerMonth.isLeapYear(2100);
+		System.out.println("Es bisciesto "+leapYear);
+		leapYear = DaysPerMonth.isLeapYear(1600);
+		System.out.println("Es bisciesto "+leapYear);
+		leapYear = DaysPerMonth.isLeapYear(-1600);
+		System.out.println("Es bisciesto "+leapYear);
+		leapYear = DaysPerMonth.isLeapYear(2017);
+		System.out.println("Es bisciesto "+leapYear);
+		leapYear = DaysPerMonth.isLeapYear(2000);
+		System.out.println("Es bisciesto "+leapYear);
+		
+		//Days per month
+		int days;
+		days = DaysPerMonth.getDaysInMonth(2, 1900);
+		System.out.println("Días del mes "+days);
+		days = DaysPerMonth.getDaysInMonth(2, 1600);
+		System.out.println("Días del mes "+days);
+		days = DaysPerMonth.getDaysInMonth(1, 2020);
+		System.out.println("Días del mes "+days);
+		days = DaysPerMonth.getDaysInMonth(2, 2020);
+		System.out.println("Días del mes "+days);
+		days = DaysPerMonth.getDaysInMonth(2, 2018);
+		System.out.println("Días del mes "+days);
+		days = DaysPerMonth.getDaysInMonth(-1, 2020);
+		System.out.println("Días del mes "+days);
+		days = DaysPerMonth.getDaysInMonth(1, -2020);
+		System.out.println("Días del mes "+days);
+		
+		//Area calculator
+		double area;
+		area = AreaCalculator.radius(5.0);
+		System.out.println("Radio "+area);
+		area = AreaCalculator.radius(-1);
+		System.out.println("Radio "+area);
+		area = AreaCalculator.radius(5.0, 4.0);
+		System.out.println("Radio "+area);
+		area = AreaCalculator.radius(-1.0, 4.0);
+		System.out.println("Radio "+area);
 	}
 }
